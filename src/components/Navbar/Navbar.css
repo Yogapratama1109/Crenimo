@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+	--black-color: #140b20;
+	--dark-gray-color: #848287;
+	--light-gray-color: #d4d4d4;
+	--blue-color: #138dff;
+	--pink-color: #f70377;
+	--white-color: #ffff;
+}
+
+nav.navbar {
+	background-color: #140b14 !important;
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+}
+
+nav.navbar a.navbar-brand h6 {
+	margin: 0;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+nav.navbar a.navbar-brand span {
+	font-weight: 600;
+	font-size: 22px;
+}
+
+nav.navbar .navbar-nav .nav-link.navbar-link {
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0.8px;
+	color: var(--white-color) !important;
+}
+
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+	font-weight: 500;
+}
+
+.offcanvas {
+	background-color: #140b14 !important;
+}
+
+.offcanvas-header {
+	color: var(--white-color);
+}
+
+.offcanvas-body {
+	color: var(--white-color);
+}
+
+.offcanvas-title h3 {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.offcanvas-title span {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+nav.navbar .navbar-toggler:active,
+nav.navbar .navbar-toggler:focus {
+	outline: none;
+	box-shadow: none;
+}
+
+nav.navbar .navbar-toggler-icon {
+	top: -2px;
+	width: 24px;
+	height: 17px;
+	background-image: none;
+	position: relative;
+	border-bottom: 3px solid #ffff;
+}
+
+nav.navbar .navbar-toggler-icon:after,
+nav.navbar .navbar-toggler-icon:before {
+	width: 24px;
+	height: 2px;
+	top: 0;
+	left: 0;
+	content: "";
+	z-index: 2;
+	position: absolute;
+	background-color: var(--white-color);
+}
+
+nav.navbar .navbar-toggler-icon:after {
+	top: 8px;
+}
+
+nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+	border-color: transparent;
+}
+
+/* .offcanvas-header .btn-close {
+	padding: 0 !important;
+	margin: 0 !important;
+} */
+
+.btn-close {
+	background: none !important;
+	position: relative;
+}
+
+.btn-close:after,
+.btn-close:before {
+	width: 20px;
+	height: 2px;
+	content: "";
+	right: 6px;
+	z-index: 2;
+	position: absolute;
+	background-color: var(--white-color);
+}
+
+.btn-close:after {
+	transform: rotate(45deg);
+}
+
+.btn-close:before {
+	transform: rotate(-45deg);
+}
+/* Responsive */
+
+@media screen and (max-width: 1400px) {
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 991px) {
+}
+
+@media screen and (max-width: 767px) {
+}
+
+@media screen and (max-width: 576px) {
+}
