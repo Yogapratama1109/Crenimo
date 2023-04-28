@@ -64,6 +64,13 @@
 }
 
 @media only screen and (max-width: 1200px) {
+	.card {
+		width: 100% !important;
+		height: 440px !important;
+		background-color: transparent !important;
+		border: 2px solid #d9d9d9 !important;
+		border-radius: 35px !important;
+	}
 }
 
 @media only screen and (max-width: 991px) {
@@ -123,7 +130,7 @@
 @media only screen and (max-width: 576px) {
 	.card {
 		width: 100% !important;
-		height: 350px !important;
+		height: 300px !important;
 		margin-bottom: 20px;
 		background-color: transparent !important;
 		border: 2px solid #d9d9d9 !important;
@@ -147,5 +154,13 @@
 	}
 }
 
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 400px) {
+	.card {
+		width: 100% !important;
+		height: 400px !important;
+		margin-bottom: 20px;
+		background-color: transparent !important;
+		border: 2px solid #d9d9d9 !important;
+		border-radius: 35px !important;
+	}
 }

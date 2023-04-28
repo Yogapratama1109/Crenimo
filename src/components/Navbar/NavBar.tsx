@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 import "./Navbar.css";
 
@@ -9,10 +9,10 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
 
 function NavBar() {
-	const [activeLink, setactiveLink] = useState("home");
+	const [activeLink, setActiveLink] = useState("home");
 
 	const onUpdateActiveLink = (value) => {
-		setactiveLink(value);
+		setActiveLink(value);
 	};
 
 	return (
@@ -68,17 +68,41 @@ function NavBar() {
 									Products
 								</Nav.Link>
 								<Nav.Link
-									href="#portofolios"
+									href="#portfolios"
 									className={
-										activeLink == "portofolios"
+										activeLink == "portfolios"
 											? "active navbar-link"
 											: "navbar-link"
 									}
 									onClick={() =>
-										onUpdateActiveLink("portofolios")
+										onUpdateActiveLink("portfolios")
 									}
 								>
 									Portofolios
+								</Nav.Link>
+								<Nav.Link
+									href="#clients"
+									className={
+										activeLink == "clients"
+											? "active navbar-link"
+											: "navbar-link"
+									}
+									onClick={() =>
+										onUpdateActiveLink("clients")
+									}
+								>
+									Clients
+								</Nav.Link>
+								<Nav.Link
+									href="#footer"
+									className={
+										activeLink == "footer"
+											? "active navbar-link"
+											: "navbar-link"
+									}
+									onClick={() => onUpdateActiveLink("footer")}
+								>
+									Contact Us
 								</Nav.Link>
 							</Nav>
 						</Offcanvas.Body>

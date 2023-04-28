@@ -1,15 +1,33 @@
-import React from "react";
-
 import "./CardSlider.css";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import Card from "react-bootstrap/Card";
 import Buttons from "../Buttons/Buttons";
 
-import PeopleIcons from "../../assets/icon/People-icon.png";
-import Mascot from "../../assets/img/artworks-2.png";
+function CardSlider(props) {
+	return (
+		<Card.Body className="p-4">
+			<div className="card-content">
+				<Card.Img variant="top" src={props.badge} className="mb-3" />
 
-function CardSlider() {
+				<Card.Title className="mb-3">{props.title}</Card.Title>
+
+				<Card.Text className="mb-3">{props.description}</Card.Text>
+
+				<Buttons
+					button={{
+						title: "Play Now",
+					}}
+				/>
+			</div>
+			<div className="card-img">
+				<img src={props.image} />
+			</div>
+		</Card.Body>
+	);
+}
+
+function CardSliderList(props) {
 	const responsive = {
 		desktop: {
 			breakpoint: { max: 3000, min: 1024 },
@@ -26,7 +44,7 @@ function CardSlider() {
 	};
 
 	return (
-		<section className="product mb-5" id="products">
+		<section id="card-slider" className="mb-5">
 			<Card>
 				<Carousel
 					responsive={responsive}
@@ -35,97 +53,19 @@ function CardSlider() {
 					showDots={true}
 					className="owl-carousel owl-theme card-slider"
 				>
-					<Card.Body className="p-4">
-						<div className="card-content">
-							<Card.Img
-								variant="top"
-								src={PeopleIcons}
-								className="mb-3"
-							/>
-
-							<Card.Title className="mb-3">
-								Game Ojek Online Interface
-							</Card.Title>
-
-							<Card.Text className="mb-3">
-								Lorem Ipsum is simply dummy text of the printing
-								and typesetting industry. Lorem Ipsum is simply
-								dummy text of the printing and typesetting
-								industry.
-							</Card.Text>
-
-							<Buttons
-								button={{
-									title: "Play Now",
-								}}
-							/>
-						</div>
-						<div className="card-img">
-							<img src={Mascot} />
-						</div>
-					</Card.Body>
-					<Card.Body className="p-4">
-						<div className="card-content">
-							<Card.Img
-								variant="top"
-								src={PeopleIcons}
-								className="mb-3"
-							/>
-
-							<Card.Title className="mb-3">
-								Game Ojek Online Interface
-							</Card.Title>
-
-							<Card.Text className="mb-3">
-								Lorem Ipsum is simply dummy text of the printing
-								and typesetting industry. Lorem Ipsum is simply
-								dummy text of the printing and typesetting
-								industry.
-							</Card.Text>
-
-							<Buttons
-								button={{
-									title: "Play Now",
-								}}
-							/>
-						</div>
-						<div className="card-img">
-							<img src={Mascot} />
-						</div>
-					</Card.Body>
-					<Card.Body className="p-4">
-						<div className="card-content">
-							<Card.Img
-								variant="top"
-								src={PeopleIcons}
-								className="mb-3"
-							/>
-
-							<Card.Title className="mb-3">
-								Game Ojek Online Interface
-							</Card.Title>
-
-							<Card.Text className="mb-3">
-								Lorem Ipsum is simply dummy text of the printing
-								and typesetting industry. Lorem Ipsum is simply
-								dummy text of the printing and typesetting
-								industry.
-							</Card.Text>
-
-							<Buttons
-								button={{
-									title: "Play Now",
-								}}
-							/>
-						</div>
-						<div className="card-img">
-							<img src={Mascot} />
-						</div>
-					</Card.Body>
+					{props.cardSlider.map((cardslider) => (
+						<CardSlider
+							key={cardslider.id}
+							badge={cardslider.badge}
+							title={cardslider.title}
+							description={cardslider.description}
+							image={cardslider.image}
+						/>
+					))}
 				</Carousel>
 			</Card>
 		</section>
 	);
 }
 
-export default CardSlider;
+export default CardSliderList;

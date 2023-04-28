@@ -10,7 +10,7 @@
 }
 
 nav.navbar {
-	background-color: #140b14 !important;
+	background-color: #140b20 !important;
 	font-family: "Poppins", sans-serif;
 	font-size: 16px;
 }
@@ -39,7 +39,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 }
 
 .offcanvas {
-	background-color: #140b14 !important;
+	background-color: #140b20 !important;
 }
 
 .offcanvas-header {

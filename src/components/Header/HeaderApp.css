@@ -11,14 +11,15 @@
 
 #home {
 	min-height: 70vh;
+	padding: 100px 0 0 0;
 }
 
 .header-text {
-	padding-right: 180px;
+	padding-right: 120px;
 }
 
 .header-text h6 {
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: 200;
 }
 
@@ -40,6 +41,10 @@
 }
 
 @media only screen and (max-width: 1200px) {
+	#home {
+		padding: 80px 0 0 0;
+	}
+
 	.header-text {
 		padding-right: 0px;
 	}
@@ -49,18 +54,22 @@
 	}
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 992px) {
 	#home {
+		padding: 60px 0 0 0;
 		flex-direction: column;
 	}
 
-	.header-artworks img {
+	.header-artworks {
 		margin-top: 50px;
+	}
+
+	.header-artworks img {
 		width: 100%;
 	}
 
 	.header-text h6 {
-		font-size: 20px;
+		font-size: 18px;
 		font-weight: 200;
 	}
 
@@ -71,8 +80,13 @@
 }
 
 @media only screen and (max-width: 767px) {
+	#home {
+		padding: 30px 0 0 0;
+		flex-direction: column;
+	}
+
 	.header-text h6 {
-		font-size: 18px;
+		font-size: 16px;
 		font-weight: 200;
 	}
 
@@ -83,18 +97,11 @@
 }
 
 @media only screen and (max-width: 576px) {
-	.header-text h6 {
-		font-size: 16px;
-		font-weight: 200;
+	#home {
+		padding: 20px 0 0 0;
+		flex-direction: column;
 	}
 
-	.header-text h1 {
-		font-size: 20px;
-		font-weight: 700;
-	}
-}
-
-@media only screen and (max-width: 300px) {
 	.header-text h6 {
 		font-size: 14px;
 		font-weight: 200;

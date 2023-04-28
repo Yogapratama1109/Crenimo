@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+	--black-color: #140b20;
+	--dark-gray-color: #848287;
+	--light-gray-color: #d4d4d4;
+	--blue-color: #138dff;
+	--pink-color: #f70377;
+	--white-color: #ffff;
+}
+
+#portfolio .nav-pills .nav-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 174px;
+	background-color: transparent;
+	color: var(--white-color);
+	font-size: 20px;
+	font-weight: 400;
+	margin: 10px;
+	border-radius: 10px;
+	border: 2px solid #ffff !important;
+}
+
+#portfolio .nav-pills .nav-link.active {
+	width: 174px;
+	background-color: var(--white-color);
+	color: var(--black-color);
+	font-size: 20px;
+	font-weight: 400;
+	border-radius: 10px;
+	border: 2px solid #ffff !important;
+}
+
+/* Card Hover */
+
+#portfolio .card {
+	position: relative;
+	width: 335px !important;
+	height: 553px !important;
+	transition: 0.5s !important;
+}
+
+#portfolio .card:hover {
+	width: 600px !important;
+	height: 553px !important;
+}
+
+#portfolio .card .card-content {
+	position: relative;
+	left: 0%;
+}
+
+#portfolio .card:hover .card-content {
+	padding-right: 230px;
+}
+
+#portfolio .card .card-content .card-title {
+	color: var(--white-color);
+	font-size: 28px !important;
+	font-weight: 500 !important;
+}
+
+#portfolio .card .card-content .card-text {
+	display: none;
+	color: var(--white-color);
+	font-size: 16px !important;
+	font-weight: 400 !important;
+}
+
+#portfolio .card:hover .card-content .card-text {
+	display: block;
+}
+
+#portfolio .card .card-img-vector img {
+	width: 250px;
+	position: absolute;
+	bottom: 0%;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: 0.5s;
+}
+
+#portfolio .card:hover .card-img-vector img {
+	left: 70%;
+}
+
+#portfolio .card .btn-portfolio a {
+	position: absolute;
+	left: 8%;
+	bottom: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--blue-color);
+	border-radius: 50px;
+	width: 160px;
+	height: 50px;
+	font-size: 20px;
+	font-weight: 500;
+	color: var(--white-color);
+	letter-spacing: 0.8px;
+	transition: 0.5s;
+	text-decoration: none;
+}
+
+#portfolio .card:hover .btn-portfolio a {
+	left: 4%;
+	bottom: 5%;
+}
+
+#portfolio .card .btn-portfolio svg {
+	margin-left: 5px;
+	transition: 0.3s ease-in-out;
+}
+
+#portfolio .card .btn-portfolio:hover svg {
+	margin-left: 15px;
+}
+
+/* Responsive */
+
+@media (max-width: 1400px) {
+	#portfolio .card .card-content .card-title {
+		font-size: 24px;
+	}
+}
+
+@media (max-width: 991px) {
+	#portfolio .wrapper-card {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	#portfolio .card:hover {
+		height: 700px !important;
+	}
+
+	#portfolio .card .card-content .card-title {
+		font-size: 20px;
+	}
+
+	#portfolio .card {
+		position: relative;
+		width: auto;
+		max-width: 100%;
+		transition: 0.5s;
+	}
+
+	#portfolio .card .btn-portfolio a {
+		margin-top: 80px;
+		text-decoration: none;
+		transition: 0.5s;
+	}
+
+	#portfolio .card .card-img-vector img {
+		bottom: 10%;
+	}
+
+	#portfolio .card:hover .card-img-vector img {
+		left: 70%;
+	}
+
+	#portfolio .card:hover .card-content {
+		padding-right: 200px;
+	}
+
+	#portfolio .card:hover .btn-portfolio a {
+		left: 6%;
+	}
+}
+
+@media (max-width: 768px) {
+	#portfolio .card .card-content .card-title {
+		font-size: 18px;
+	}
+
+	#portfolio .card .card-content .card-text {
+		font-size: 16px;
+	}
+
+	.card .btn-portfolio a {
+		margin-top: 50px;
+		text-decoration: none;
+		transition: 0.5s;
+	}
+
+	#portfolio .card:hover .card-content {
+		padding-right: 80px;
+	}
+}
+
+@media (max-width: 576px) {
+	#portfolio .card .card-content .card-title {
+		font-size: 16px;
+	}
+
+	#portfolio .card .card-content .card-text {
+		font-size: 14px;
+	}
+
+	.btn-portfolio a {
+		margin-top: 60px;
+		text-decoration: none;
+		transition: 0.5s;
+	}
+
+	#portfolio .card:hover .card-content {
+		padding-right: 0px;
+	}
+
+	#portfolio .card .card-img-vector img {
+		bottom: 10%;
+	}
+
+	#portfolio .card:hover .card-img-vector img {
+		left: 60%;
+	}
+}
+
+@media (max-width: 400px) {
+	#portfolio .card .card-img-vector img {
+		bottom: 10%;
+	}
+
+	#portfolio .card:hover .card-img-vector img {
+		left: 50%;
+	}
+}
+
+@media (max-width: 300px) {
+	#portfolio .card .card-img-vector img {
+		width: 100%;
+	}
+}

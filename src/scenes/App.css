@@ -14,10 +14,11 @@
 	box-sizing: border-box;
 }
 
-body {
+#app {
+	background-color: #140b20 !important;
 	font-family: "Poppins", sans-serif;
 }
 
-.App {
-	background-color: #140b14;
+#app .container {
+	width: min(100% - 30px, 1320px);
 }

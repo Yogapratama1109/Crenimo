@@ -5,9 +5,17 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Container } from "react-bootstrap";
 
-import MRG from "../../assets/brand/mrg-logo.png";
+function Slider(props) {
+	return (
+		<>
+			<div className="item">
+				<img src={props.brand} alt="" />
+			</div>
+		</>
+	);
+}
 
-function Slider() {
+function SliderList(props) {
 	const responsive = {
 		desktop: {
 			breakpoint: { max: 3000, min: 1024 },
@@ -33,22 +41,13 @@ function Slider() {
 					showDots={false}
 					className="owl-carousel owl-theme card-slider"
 				>
-					<div className="item">
-						<img src={MRG} alt="" />
-					</div>
-					<div className="item">
-						<img src={MRG} alt="" />
-					</div>
-					<div className="item">
-						<img src={MRG} alt="" />
-					</div>
-					<div className="item">
-						<img src={MRG} alt="" />
-					</div>
+					{props.Slider.map((sliders) => (
+						<Slider key={sliders.id} brand={sliders.brand} />
+					))}
 				</Carousel>
 			</Container>
 		</section>
 	);
 }
 
-export default Slider;
+export default SliderList;
