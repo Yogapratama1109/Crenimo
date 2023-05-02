@@ -1,7 +1,9 @@
+import "./Product.css";
 import TitleSection from "../../components/Title Section/TitleSection";
 import CardSlider from "../../components/Slider Card/CardSlider";
 import GameIcons from "../../assets/icon/Game-icon.png";
 import Mascot from "../../assets/img/artworks-2.png";
+import BlurEffect from "../../components/Blur Effect/BlurEffect";
 
 function Product() {
 	const cardsliders = [
@@ -32,16 +34,16 @@ function Product() {
 	];
 
 	return (
-		<>
+		<section id="products">
+			<BlurEffect />
 			<TitleSection
 				section={{
-					id: "products",
 					title: "We’ve got What You Need",
 					subtitle: "Our Product",
 				}}
 			/>
 			<CardSlider cardSlider={cardsliders} />
-		</>
+		</section>
 	);
 }
 

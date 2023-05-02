@@ -6,16 +6,17 @@ import { Row, Col, Card, Stack } from "react-bootstrap";
 import Buttons from "../../components/Buttons/Buttons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowRight } from "@fortawesome/free-solid-svg-icons";
+import BlurEffect from "../../components/Blur Effect/BlurEffect";
 
 import GameIcons from "../../assets/icon/Game-icon.png";
 import Mascot from "../../assets/img/artworks-2.png";
 
 function Portfolio() {
 	return (
-		<>
+		<section id="portfolios">
+			<BlurEffect />
 			<TitleSection
 				section={{
-					id: "portfolios",
 					title: "The Product from Our Experience",
 					subtitle: "Portfolio",
 				}}
@@ -48,7 +49,7 @@ function Portfolio() {
 					</Tab.Content>
 				</Tab.Container>
 			</section>
-		</>
+		</section>
 	);
 }
 

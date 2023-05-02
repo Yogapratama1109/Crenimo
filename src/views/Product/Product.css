@@ -1,0 +1,15 @@
+#products .blur-effect {
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	left: 1228px;
+	top: 1378px;
+	background: rgba(19, 141, 255, 0.6);
+	filter: blur(150px);
+}
+
+@media only screen and (max-width: 1500px) {
+	#products .blur-effect {
+		display: none;
+	}
+}

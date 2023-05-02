@@ -25,16 +25,15 @@ function OurClients() {
 	];
 
 	return (
-		<>
+		<section id="clients">
 			<TitleSection
 				section={{
-					id: "clients",
 					title: "Clients Who Trust Us",
 					subtitle: "Clients",
 				}}
 			/>
 			<Slider Slider={Sliders} />
-		</>
+		</section>
 	);
 }
 

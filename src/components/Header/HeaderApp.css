@@ -9,13 +9,14 @@
 	--white-color: #ffff;
 }
 
-#home {
+.header {
 	min-height: 70vh;
 	padding: 100px 0 0 0;
 }
 
 .header-text {
 	padding-right: 120px;
+	z-index: 1019;
 }
 
 .header-text h6 {
@@ -41,7 +42,7 @@
 }
 
 @media only screen and (max-width: 1200px) {
-	#home {
+	.header {
 		padding: 80px 0 0 0;
 	}
 
@@ -55,7 +56,7 @@
 }
 
 @media only screen and (max-width: 992px) {
-	#home {
+	.header {
 		padding: 60px 0 0 0;
 		flex-direction: column;
 	}
@@ -80,7 +81,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-	#home {
+	.header {
 		padding: 30px 0 0 0;
 		flex-direction: column;
 	}
@@ -97,7 +98,7 @@
 }
 
 @media only screen and (max-width: 576px) {
-	#home {
+	.header {
 		padding: 20px 0 0 0;
 		flex-direction: column;
 	}

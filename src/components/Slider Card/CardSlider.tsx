@@ -51,6 +51,8 @@ function CardSliderList(props) {
 					infinite={true}
 					arrows={false}
 					showDots={true}
+					autoPlay={true}
+					autoPlaySpeed={7000}
 					className="owl-carousel owl-theme card-slider"
 				>
 					{props.cardSlider.map((cardslider) => (

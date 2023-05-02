@@ -9,6 +9,14 @@
 	--white-color: #ffff;
 }
 
+#portfolios .blur-effect {
+	position: absolute;
+	width: 250px;
+	height: 250px;
+	left: -25px;
+	top: 2280px;
+}
+
 #portfolio .nav-pills .nav-link {
 	display: flex;
 	justify-content: center;
@@ -53,7 +61,7 @@
 }
 
 #portfolio .card:hover .card-content {
-	padding-right: 230px;
+	max-width: 100%;
 }
 
 #portfolio .card .card-content .card-title {
@@ -67,6 +75,7 @@
 	color: var(--white-color);
 	font-size: 16px !important;
 	font-weight: 400 !important;
+	transition: 0.5s;
 }
 
 #portfolio .card:hover .card-content .card-text {
@@ -127,6 +136,13 @@
 	}
 }
 
+@media (max-width: 1200px) {
+	#portfolio .card .btn-portfolio a {
+		left: 8%;
+		bottom: 55%;
+	}
+}
+
 @media (max-width: 991px) {
 	#portfolio .wrapper-card {
 		flex-direction: column;
@@ -139,6 +155,11 @@
 
 	#portfolio .card .card-content .card-title {
 		font-size: 20px;
+	}
+
+	#portfolio .card .btn-portfolio a {
+		left: 8%;
+		bottom: 60%;
 	}
 
 	#portfolio .card {
@@ -162,10 +183,6 @@
 		left: 70%;
 	}
 
-	#portfolio .card:hover .card-content {
-		padding-right: 200px;
-	}
-
 	#portfolio .card:hover .btn-portfolio a {
 		left: 6%;
 	}
@@ -185,10 +202,6 @@
 		text-decoration: none;
 		transition: 0.5s;
 	}
-
-	#portfolio .card:hover .card-content {
-		padding-right: 80px;
-	}
 }
 
 @media (max-width: 576px) {
@@ -204,10 +217,6 @@
 		margin-top: 60px;
 		text-decoration: none;
 		transition: 0.5s;
-	}
-
-	#portfolio .card:hover .card-content {
-		padding-right: 0px;
 	}
 
 	#portfolio .card .card-img-vector img {
