@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLongArrowRight } from "@fortawesome/free-solid-svg-icons";
 import BlurEffect from "../../components/Blur Effect/BlurEffect";
 
-import GameIcons from "../../assets/icon/Game-icon.png";
+import GameIcons from "../../assets/icon/games.png";
 import Mascot from "../../assets/img/artworks-2.png";
 
 function Portfolio() {

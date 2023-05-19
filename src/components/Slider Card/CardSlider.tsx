@@ -8,7 +8,11 @@ function CardSlider(props) {
 	return (
 		<Card.Body className="p-4">
 			<div className="card-content">
-				<Card.Img variant="top" src={props.badge} className="mb-3" />
+				<Card.Img
+					variant="top"
+					src={props.badge}
+					className={props.id}
+				/>
 
 				<Card.Title className="mb-3">{props.title}</Card.Title>
 
@@ -58,6 +62,7 @@ function CardSliderList(props) {
 					{props.cardSlider.map((cardslider) => (
 						<CardSlider
 							key={cardslider.id}
+							id={cardslider.id}
 							badge={cardslider.badge}
 							title={cardslider.title}
 							description={cardslider.description}

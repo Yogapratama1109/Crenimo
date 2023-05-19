@@ -12,7 +12,7 @@ function CardComponent(props) {
 						variant="top"
 						src={props.image}
 						alt=""
-						className="mb-3"
+						className={props.id}
 					/>
 
 					<Card.Title className="mb-3">{props.title}</Card.Title>
@@ -30,6 +30,7 @@ function CardList(props) {
 			{props.cards.map((card) => (
 				<CardComponent
 					key={card.id}
+					id={card.id}
 					image={card.image}
 					title={card.title}
 					description={card.description}

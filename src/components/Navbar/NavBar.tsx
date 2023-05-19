@@ -7,6 +7,7 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import NavbarToggle from "react-bootstrap/esm/NavbarToggle";
+import logoCrenimo from "../../assets/brand/crenimo_putih.png";
 
 function NavBar() {
 	const [activeLink, setActiveLink] = useState("home");
@@ -20,9 +21,11 @@ function NavBar() {
 			<Navbar sticky="top" expand="md" className="mb-3">
 				<Container>
 					<Navbar.Brand href="#" className="text-white">
-						<h6>
-							<span>CRE</span>NIMO
-						</h6>
+						<img
+							alt=""
+							src={logoCrenimo}
+							style={{ width: "30px", height: "100%" }}
+						></img>
 					</Navbar.Brand>
 					<NavbarToggle aria-controls={`offcanvasNavbar-expand-md`}>
 						<span className="navbar-toggler-icon"></span>
@@ -36,9 +39,11 @@ function NavBar() {
 								id={`offcanvasNavbarLabel-expand-md`}
 								className="offcanvas-title"
 							>
-								<h3>
-									<span>CRE</span>NIMO
-								</h3>
+								<img
+									alt=""
+									src={logoCrenimo}
+									style={{ width: "30px", height: "100%" }}
+								></img>
 							</Offcanvas.Title>
 						</Offcanvas.Header>
 						<Offcanvas.Body>

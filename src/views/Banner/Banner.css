@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+	--black-color: #140b20;
+	--dark-gray-color: #848287;
+	--light-gray-color: #d4d4d4;
+	--blue-color: #138dff;
+	--pink-color: #f70377;
+	--white-color: #ffff;
+}
+
+#home .blur-effect {
+	position: absolute;
+	width: 150px;
+	height: 260px;
+	left: 1195px;
+	top: 429px;
+
+	background: rgba(19, 141, 255, 0.6);
+	filter: blur(150px);
+	z-index: 1;
+}
+
+@media only screen and (max-width: 1500px) {
+	#home .blur-effect {
+		display: none;
+	}
+}

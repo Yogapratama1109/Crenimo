@@ -1,3 +1,4 @@
+import "./Banner.css";
 import HeaderApp from "../../components/Header/HeaderApp";
 import Artworks from "../../assets/img/artworks-1.png";
 import BlurEffect from "../../components/Blur Effect/BlurEffect";
@@ -16,6 +17,7 @@ function Banner() {
 					images: Artworks,
 				}}
 			/>
+			<BlurEffect />
 		</section>
 	);
 }

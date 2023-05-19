@@ -1,7 +1,7 @@
 import "./Product.css";
 import TitleSection from "../../components/Title Section/TitleSection";
 import CardSlider from "../../components/Slider Card/CardSlider";
-import GameIcons from "../../assets/icon/Game-icon.png";
+import GameIcons from "../../assets/icon/games.png";
 import Mascot from "../../assets/img/artworks-2.png";
 import BlurEffect from "../../components/Blur Effect/BlurEffect";
 

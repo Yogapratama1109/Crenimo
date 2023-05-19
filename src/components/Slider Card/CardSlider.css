@@ -109,11 +109,15 @@
 		font-size: 16px !important;
 		font-weight: 400 !important;
 	}
+
+	#card-slider .card .card-body .card-img img {
+		width: 300px;
+	}
 }
 
 @media screen and (max-width: 576px) {
 	#card-slider .card .card-body .card-img img {
-		width: 100%;
+		width: 200px;
 		display: block;
 		margin: auto;
 	}
@@ -128,5 +132,11 @@
 		color: var(--white-color);
 		font-size: 14px !important;
 		font-weight: 400 !important;
+	}
+}
+
+@media screen and (max-width: 300px) {
+	#card-slider .card .card-body .card-img img {
+		width: 100%;
 	}
 }

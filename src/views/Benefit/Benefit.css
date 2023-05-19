@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+
+:root {
+	--black-color: #140b20;
+	--dark-gray-color: #848287;
+	--light-gray-color: #d4d4d4;
+	--blue-color: #138dff;
+	--pink-color: #f70377;
+	--white-color: #ffff;
+}
+
+#benefit img.card-img-top.\31 {
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 50%;
+	background: linear-gradient(90deg, #f70377 0%, #f6a9cd 101.56%);
+}
+
+#benefit img.card-img-top.\32 {
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 50%;
+	background: linear-gradient(90deg, #824bbe 0%, #d0b5ee 101.56%);
+}
+
+#benefit img.card-img-top.\33 {
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 50%;
+	background: linear-gradient(90deg, #138dff 0%, #a7d4ff 101.56%);
+}

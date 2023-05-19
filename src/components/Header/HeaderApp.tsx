@@ -15,7 +15,7 @@ function HeaderApp(props) {
 				/>
 			</div>
 
-			<div className="header-artworks">
+			<div className="header-artworks d-flex justify-content-center">
 				<img src={props.header.images} alt=""></img>
 			</div>
 		</section>

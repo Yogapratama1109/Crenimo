@@ -9,6 +9,12 @@
 	--white-color: #ffff;
 }
 
+#portfolios img.card-img-top.mb-3 {
+	padding: 10px;
+	border-radius: 50%;
+	background: linear-gradient(90deg, #138dff 0%, #99ceff 101.56%);
+}
+
 #portfolios .blur-effect {
 	position: absolute;
 	width: 250px;
@@ -189,6 +195,16 @@
 }
 
 @media (max-width: 768px) {
+	#portfolio .nav-pills .nav-link.active {
+		width: 150px;
+		font-size: 16px;
+	}
+
+	#portfolio .nav-pills .nav-link {
+		width: 150px;
+		font-size: 16px;
+	}
+
 	#portfolio .card .card-content .card-title {
 		font-size: 18px;
 	}
@@ -197,14 +213,34 @@
 		font-size: 16px;
 	}
 
-	.card .btn-portfolio a {
+	#portfolio .card .btn-portfolio a {
+		width: 100px;
+		height: 40px;
+		font-size: 14px;
+		font-weight: 500;
+		color: var(--white-color);
+		letter-spacing: 0.8px;
 		margin-top: 50px;
 		text-decoration: none;
 		transition: 0.5s;
+		left: 8%;
+		bottom: 63%;
+	}
+
+	#portfolio .card:hover .btn-portfolio a {
+		left: 6%;
 	}
 }
 
 @media (max-width: 576px) {
+	#portfolio .nav-pills .nav-link.active {
+		font-size: 14px;
+	}
+
+	#portfolio .nav-pills .nav-link {
+		font-size: 14px;
+	}
+
 	#portfolio .card .card-content .card-title {
 		font-size: 16px;
 	}
@@ -235,6 +271,14 @@
 
 	#portfolio .card:hover .card-img-vector img {
 		left: 50%;
+	}
+
+	#portfolio .nav-pills .nav-link.active {
+		width: 110px;
+	}
+
+	#portfolio .nav-pills .nav-link {
+		width: 110px;
 	}
 }
 

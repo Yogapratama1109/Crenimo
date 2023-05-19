@@ -8,6 +8,27 @@
 	filter: blur(150px);
 }
 
+#products img.card-img-top.\31 {
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 50%;
+	background: linear-gradient(90deg, #138dff 0%, #99ceff 101.56%);
+}
+
+#products img.card-img-top.\32 {
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 50%;
+	background: linear-gradient(90deg, #138dff 0%, #99ceff 101.56%);
+}
+
+#products img.card-img-top.\33 {
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 50%;
+	background: linear-gradient(90deg, #138dff 0%, #99ceff 101.56%);
+}
+
 @media only screen and (max-width: 1500px) {
 	#products .blur-effect {
 		display: none;

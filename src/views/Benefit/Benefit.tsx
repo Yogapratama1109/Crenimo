@@ -1,7 +1,10 @@
 import React from "react";
 
+import "./Benefit.css";
 import CardList from "../../components/Card/Cards";
-import PeopleIcons from "../../assets/icon/People-icon.png";
+import PeopleIcons from "../../assets/icon/24-hours-support.png";
+import ClockIcons from "../../assets/icon/fast-time.png";
+import ServicesIcons from "../../assets/icon/24-hours-support.png";
 
 function Benefit() {
 	const cards = [
@@ -14,14 +17,14 @@ function Benefit() {
 		},
 		{
 			id: 2,
-			image: PeopleIcons,
+			image: ClockIcons,
 			title: "Fast Project Work",
 			description:
 				"Projects undertaken by us can be quickly completed with experienced designers and software engineers.",
 		},
 		{
 			id: 3,
-			image: PeopleIcons,
+			image: ServicesIcons,
 			title: "24/7 Support ",
 			description:
 				"We are always ready to serve you anytime and anywhere. With our 24/7 support service, you can feel safe and comfortable, because our help is always available when you need it.",
@@ -29,9 +32,9 @@ function Benefit() {
 	];
 
 	return (
-		<>
+		<section id="benefit">
 			<CardList cards={cards} />
-		</>
+		</section>
 	);
 }
 
