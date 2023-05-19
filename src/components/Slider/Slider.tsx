@@ -27,7 +27,7 @@ function SliderList(props) {
 		},
 		mobile: {
 			breakpoint: { max: 576, min: 0 },
-			items: 1,
+			items: 2,
 		},
 	};
 
